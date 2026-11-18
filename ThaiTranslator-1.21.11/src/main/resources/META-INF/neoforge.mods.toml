@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="thaitranslator"
+version="1.0.0"
+displayName="Thai Translator"
+authors="NCchaNon"
+description='''Real-time in-game translation to Thai with built-in Thai font fix.'''
+
+[[mixins]]
+config="livetranslator.mixins.json"
+
+[[dependencies.thaitranslator]]
+modId="neoforge"
+type="required"
+versionRange="[21.11.48,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.thaitranslator]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.11]"
+ordering="NONE"
+side="CLIENT"

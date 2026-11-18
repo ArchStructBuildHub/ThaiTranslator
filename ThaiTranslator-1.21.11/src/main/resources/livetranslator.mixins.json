@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.livetranslator.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "MixinStringDecomposer",
+    "MixinChatComponent"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
