@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ThaiTranslator-1.21.11
     steps:
       - uses: actions/checkout@v4
       - name: Set up JDK 21
@@ -23,4 +26,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ThaiTranslator-1.21.11-1.0.0
-          path: build/libs/*.jar
+          path: ThaiTranslator-1.21.11/build/libs/*.jar
